@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BGMI Tournament - Sign In / Register</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#111, #333);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 2px 15px rgba(0,0,0,.3);
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom:20px;
+}
+.tabs div {
+  font-size:16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+}
+.tabs .active {
+  color:#ff6600;
+  border-bottom:2px solid #ff6600;
+}
+.input-field {
+  margin: 15px 0;
+}
+.input-field input {
+  width:100%; 
+  padding:10px;
+  font-size:15px;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+.action-button {
+  padding:12px 20px;
+  font-size:16px;
+  border-radius:5px;
+  border:none;
+  background:#ff6600;
+  color:#fff;
+  cursor:pointer;
+  width:100%;
+}
+.action-button:hover {
+  background:#e65c00;
+}
+.footer {
+  margin-top:10px;
+}
+.footer a {
+  color:#ff6600;
+  text-decoration:none;
+}
+.hidden {
+  display: none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="tabs">
+    <div id="signInTab" class="active">Sign In</div>
+    <div id="registerTab">Register</div>
+  </div>
+
+  <!-- Sign In Form -->
+  <div id="signInForm">
+    <div class="input-field"><input type="email" id="loginEmail" placeholder="Email" /></div>
+    <div class="input-field"><input type="password" id="loginPassword" placeholder="Password" /></div>
+    <button class="action-button" id="signInBtn">Login</button>
+    <div class="footer"><a href="#">Forgot Password?</a></div>
+  </div>
+
+  <!-- Register Form -->
+  <div id="registerForm" class="hidden">
+    <div class="input-field"><input type="email" id="registerEmail" placeholder="Email" /></div>
+    <div class="input-field"><input type="password" id="registerPassword" placeholder="Password" /></div>
+    <div class="input-field"><input type="password" id="confirmPassword" placeholder="Confirm Password" /></div>
+    <button class="action-button" id="registerBtn">Register</button>
+  </div>
+</div>
+
+<script>
+const signInTab = document.getElementById('signInTab');
+const registerTab = document.getElementById('registerTab');
+const signInForm = document.getElementById('signInForm');
+const registerForm = document.getElementById('registerForm');
+
+signInTab.onclick = () => {
+  signInTab.classList.add('active');
+  registerTab.classList.remove('active');
+  signInForm.classList.remove('hidden');
+  registerForm.classList.add('hidden');
+};
+
+registerTab.onclick = () => {
+  registerTab.classList.add('active');
+  signInTab.classList.remove('active');
+  registerForm.classList.remove('hidden');
+  signInForm.classList.add('hidden');
+};
+
+document.getElementById('signInBtn').onclick = () => {
+  alert('Logged In Successfully!');
+};
+document.getElementById('registerBtn').onclick = () => {
+  const pass = document.getElementById('registerPassword').value;
+  const confirmPass = document.getElementById('confirmPassword').value;
+
+  if(pass === confirmPass) {
+    alert('Registration Successful!');
+  } else {
+    alert('Passwords do not match!');
+  }
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BGMI Home</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #fff;
+}
+.wallpaper img {
+  width:100%; 
+  height:auto;
+}
+.content {
+  padding:15px;
+}
+.content h2 {
+  font-size:18px;
+  font-weight:600;
+}
+.tournament-item {
+  background:#222;
+  padding:15px;
+  border-radius:8px;
+  margin:10px 0;
+}
+.tournament-item h3 {
+  font-size:16px;
+}
+.tournament-item p {
+  font-size:14px;
+}
+.navbar {
+  position:fixed;
+  bottom:0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  background:#ff6600;
+  padding:10px;
+  width:100%;
+}
+.navbar a {
+  text-decoration:none;
+  color:#fff;
+  font-size:14px;
+}
+.navbar a.active {
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<!-- BGMI Wallpaper Section -->
+<div class="wallpaper">
+  <img src="https://i.postimg.cc/9Qs16LZw/bgmi-banner.png" alt="BGMI Wallpaper">
+</div>
+
+<!-- Tournament List Section -->
+<div class="content">
+  <h2>Available Tournaments</h2>
+  <div class="tournament-item">
+    <h3>BGMI Solo Championship</h3>
+    <p>Date: 25 June | Fee: Rs.100</p>
+  </div>
+  <div class="tournament-item">
+    <h3>BGMI Squad Clash</h3>
+    <p>Date: 27 June | Fee: Rs.200</p>
+  </div>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="home.html" class="active">Home</a>
+  <a href="earn.html">Earn</a>
+  <a href="rank.html">Rank</a>
+  <a href="wallet.html">Wallet</a>
+  <a href="profile.html">Profile</a>
+</div>
+
+</body>
+</html>

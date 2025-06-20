@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile | BGMI Tournament App</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  background-color:#111;
+  color:#fff;
+}
+.content {
+  padding:15px;
+}
+.profile-header {
+  text-align:center;
+}
+.profile-header .avatar {
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  background:#ff6600;
+  font-size:30px;
+  font-weight:bold;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:10px auto;
+}
+.profile-header .name {
+  font-size:18px;
+  font-weight:600;
+}
+.profile-header .email,
+.profile-header .phone {
+  font-size:14px;
+  color:#bbb;
+}
+.stats {
+  display:flex;
+  justify-content:space-around;
+  margin:15px 0;
+}
+.stats div {
+  text-align:center;
+}
+.stats .count {
+  font-size:16px;
+  font-weight:bold;
+}
+.menu-item {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+  background:#222;
+  border-radius:8px;
+  margin:5px 0;
+}
+.menu-item .title {
+  font-size:15px;
+}
+.menu-item .arrow {
+  font-size:14px;
+}
+.logout {
+  color:#ff4040;
+}
+.navbar {
+  position:fixed;
+  bottom:0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  background:#ff6600;
+  padding:10px;
+  width:100%;
+}
+.navbar a {
+  text-decoration:none;
+  color:#fff;
+  font-size:14px;
+}
+.navbar a.active {
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+  <!-- Profile Header -->
+  <div class="profile-header">
+    <div class="avatar">KR</div>
+    <div class="name">Krishna</div>
+    <div class="email">krishnapathak0122@gmail.com</div>
+    <div class="phone">9536228068</div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div><div class="count">0</div>Matches Played</div>
+    <div><div class="count">0</div>Matches Won</div>
+    <div><div class="count">₹0.00</div>Total Winnings</div>
+  </div>
+
+  <!-- Menu Items -->
+  <div class="menu-item"><span class="title">Notifications</span> <span class="arrow">🔔</span></div>
+  <div class="menu-item"><span class="title">Edit Profile</span> <span class="arrow">✏️</span></div>
+  <div class="menu-item"><span class="title">Refer & Earn</span> <span class="arrow">👥</span></div>
+  <div class="menu-item"><span class="title">My Stats</span> <span class="arrow">📈</span></div>
+  <div class="menu-item"><span class="title">Transaction History</span> <span class="arrow">⏳</span></div>
+  <div class="menu-item"><span class="title">Contact</span> <span class="arrow">🎧</span></div>
+  <div class="menu-item"><span class="title">Privacy Policy</span> <span class="arrow">🛡️</span></div>
+  <div class="menu-item"><span class="title">Terms and Conditions</span> <span class="arrow">📄</span></div>
+  <div class="menu-item"><span class="title">Refund and Cancellation</span> <span class="arrow">↩️</span></div>
+  <div class="menu-item"><span class="title">Fair Play Policy</span> <span class="arrow">✅</span></div>
+  <div class="menu-item"><span class="title">DEVELOPER</span> <span class="arrow">👨‍💻</span></div>
+  <div class="menu-item logout"><span class="title">Logout</span> <span class="arrow">🚪</span></div>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="earn.html">Earn</a>
+  <a href="rank.html">Rank</a>
+  <a href="wallet.html">Wallet</a>
+  <a href="profile.html" class="active">Profile</a>
+</div>
+
+</body>
+</html>

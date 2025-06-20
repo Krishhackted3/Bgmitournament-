@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rank | BGMI Tournament App</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  background-color:#111;
+  color:#fff;
+}
+.content {
+  padding:15px;
+}
+.content h2 {
+  font-size:18px;
+  font-weight:600;
+}
+.rank-item {
+  background:#222;
+  padding:15px;
+  border-radius:8px;
+  margin:10px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.rank-item .name {
+  font-size:15px;
+}
+.rank-item .points {
+  font-size:14px;
+  color:#ff6600;
+}
+.navbar {
+  position:fixed;
+  bottom:0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  background:#ff6600;
+  padding:10px;
+  width:100%;
+}
+.navbar a {
+  text-decoration:none;
+  color:#fff;
+  font-size:14px;
+}
+.navbar a.active {
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h2>Top Rankings</h2>
+  
+  <div class="rank-item">
+    <span class="name">1. ShadowKiller</span>
+    <span class="points">Points: 987</span>
+  </div>
+  
+  <div class="rank-item">
+    <span class="name">2. SniperKing</span>
+    <span class="points">Points: 856</span>
+  </div>
+  
+  <div class="rank-item">
+    <span class="name">3. DarkHunter</span>
+    <span class="points">Points: 743</span>
+  </div>
+  
+  <div class="rank-item">
+    <span class="name">4. BGMIPro</span>
+    <span class="points">Points: 650</span>
+  </div>
+  
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="earn.html">Earn</a>
+  <a href="rank.html" class="active">Rank</a>
+  <a href="wallet.html">Wallet</a>
+  <a href="profile.html">Profile</a>
+</div>
+
+</body>
+</html>

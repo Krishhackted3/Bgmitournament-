@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Forgot Password</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{font-family: Arial, sans-serif;background:#111;color:#fff;padding:20px}
+h2{text-align:center}
+input,button{width:100%;margin:8px 0;padding:12px;border-radius:5px;border:none}
+input{background:#222;color:#fff}
+button{background:#ff6600;color:#fff}
+a{color:#ff6600;text-decoration:none}
+</style>
+<body>
+<h2>Forgot Password</h2>
+<form id="forgotForm">
+<input type="email" id="email" placeholder="Enter your registered Email" required/>
+<button type="submit">Check Email</button>
+</form>
+<div id="resetSection" style="display:none;">
+<h2>Reset Password</h2>
+<form id="resetForm">
+<input type="password" id="newPassword" placeholder="New Password" required/>
+<button type="submit">Reset Password</button>
+</form>
+</div>
+<script>
+let resetEmail = '';
+document.getElementById('forgotForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const email = document.getElementById('email').value;
+  const user = JSON.parse(localStorage.getItem(email));
+  if(user) {
+    resetEmail = email;
+    alert('Email found! You can now reset your password.');
+    document.getElementById('resetSection').style.display = 'block';
+  } else {
+    alert('Email not registered!');
+  }
+});
+document.getElementById('resetForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const newPassword = document.getElementById('newPassword').value;
+  const user = JSON.parse(localStorage.getItem(resetEmail));
+  user.password = newPassword;
+  localStorage.setItem(resetEmail, JSON.stringify(user));
+  alert('Password reset successful! You can now login.');
+  window.location.href = 'login.html';
+});
+</script>
+</body>
+</html>

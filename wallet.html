@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wallet | BGMI Tournament App</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  background-color:#111;
+  color:#fff;
+}
+.content {
+  padding:15px;
+}
+.content h2 {
+  font-size:18px;
+  font-weight:600;
+}
+.balance {
+  font-size:16px;
+  font-weight:bold;
+  color:#ff6600;
+  margin:10px 0;
+}
+.transaction-item {
+  background:#222;
+  padding:15px;
+  border-radius:8px;
+  margin:10px 0;
+}
+.transaction-item .title {
+  font-size:15px;
+}
+.transaction-item .amount {
+  font-size:14px;
+}
+.navbar {
+  position:fixed;
+  bottom:0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  background:#ff6600;
+  padding:10px;
+  width:100%;
+}
+.navbar a {
+  text-decoration:none;
+  color:#fff;
+  font-size:14px;
+}
+.navbar a.active {
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h2>My Wallet</h2>
+  <div class="balance">Balance: Rs. 1250</div>
+  
+  <h3>Transactions</h3>
+  <div class="transaction-item">
+    <div class="title">Winning from BGMI Solo Championship</div>
+    <div class="amount">+ Rs.500</div>
+  </div>
+  <div class="transaction-item">
+    <div class="title">Registration Fee for BGMI Squad Clash</div>
+    <div class="amount">- Rs.200</div>
+  </div>
+  <div class="transaction-item">
+    <div class="title">Reward from Daily Check-in</div>
+    <div class="amount">+ Rs.20</div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="earn.html">Earn</a>
+  <a href="rank.html">Rank</a>
+  <a href="wallet.html" class="active">Wallet</a>
+  <a href="profile.html">Profile</a>
+</div>
+
+</body>
+</html>

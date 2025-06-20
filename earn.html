@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Earn | BGMI Tournament App</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  background-color:#111;
+  color:#fff;
+}
+.content {
+  padding:15px;
+}
+.content h2 {
+  font-size:18px;
+  font-weight:600;
+}
+.earn-item {
+  background:#222;
+  padding:15px;
+  border-radius:8px;
+  margin:10px 0;
+}
+.earn-item h3 {
+  font-size:16px;
+}
+.earn-item p {
+  font-size:14px;
+}
+.earn-button {
+  padding:8px 15px;
+  font-size:14px;
+  border-radius:5px;
+  border:none;
+  background:#ff6600;
+  color:#fff;
+  cursor:pointer;
+}
+.navbar {
+  position:fixed;
+  bottom:0;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  background:#ff6600;
+  padding:10px;
+  width:100%;
+}
+.navbar a {
+  text-decoration:none;
+  color:#fff;
+  font-size:14px;
+}
+.navbar a.active {
+  font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h2>Earn Coins</h2>
+  
+  <div class="earn-item">
+    <h3>Watch an Ad</h3>
+    <p>Reward: +10 Coins</p>
+    <button class="earn-button">Watch</button>
+  </div>
+  
+  <div class="earn-item">
+    <h3>Daily Check-in</h3>
+    <p>Reward: +5 Coins</p>
+    <button class="earn-button">Check-In</button>
+  </div>
+  
+  <div class="earn-item">
+    <h3>Refer a Friend</h3>
+    <p>Reward: +20 Coins</p>
+    <button class="earn-button">Share Link</button>
+  </div>
+</div>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="earn.html" class="active">Earn</a>
+  <a href="rank.html">Rank</a>
+  <a href="wallet.html">Wallet</a>
+  <a href="profile.html">Profile</a>
+</div>
+
+</body>
+</html>
